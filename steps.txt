@@ -1,0 +1,6 @@
+Activate virtual environment
+Install django
+create a requirements.txt file to put all yur dependencies installed
+Start project
+Start app
+Register app inside the settings.py
