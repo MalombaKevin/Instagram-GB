@@ -1,9 +1,10 @@
 from django import forms
-from models import Insta_Images
+from .models import Images
 
 class NewInstaImages(forms.ModelForm):
      class Meta:
-        model = Insta_Images
+        model = Images
+        fields = '__all__'
         exclude = ['image_likes']
         
 
