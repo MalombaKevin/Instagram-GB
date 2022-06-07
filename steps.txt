@@ -4,3 +4,12 @@ create a requirements.txt file to put all yur dependencies installed
 Start project
 Start app
 Register app inside the settings.py
+create first view function
+create urls.py on app folder and setup the paths for view functions
+Setup the app urls on the project urls.py file
+Confirm app is working
+Create a Nav bar
+Create and Setup database
+-
+Create two models ( Image and Profile)
+
