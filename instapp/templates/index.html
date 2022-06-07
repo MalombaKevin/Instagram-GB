@@ -2,15 +2,52 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="https://thumbs.dreamstime.com/b/instagram-round-icon-vector-instagram-round-multicolor-icon-white-background-134391805.jpg/>
+    <link rel="shortcut icon" type="image/png"
+        href="https://thumbs.dreamstime.com/b/instagram-round-icon-vector-instagram-round-multicolor-icon-white-background-134391805.jpg" />
+    <script src="https://kit.fontawesome.com/9c5f6822d9.js" crossorigin="anonymous"></script>
     <title>Instagram</title>
 </head>
+
 <body>
     {% include 'navbar.html'%}
-    
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-6">
+
+                {%for image in images%}
+                <div class="card" style="height:30rem; width:30rem">
+
+                    
+
+                    
+                        <img src="{{image.image_url.url}}" alt="{{image_name}}" class="card-image-top" style="width:100%; height:25rem">
+
+            
+
+
+
+                    <p>{{image.image_caption}}</p>
+                </div><br>
+
+
+
+
+
+                {%endfor%}
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
 </body>
+
 </html>
