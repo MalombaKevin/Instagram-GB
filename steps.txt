@@ -10,6 +10,26 @@ Setup the app urls on the project urls.py file
 Confirm app is working
 Create a Nav bar
 Create and Setup database
--
-Create two models ( Image and Profile)
+-env & settings.py 
+Create image class in models
+create a save function
+Update the forms.py (import classes and register)
+Create a view function for the form
+Render it to a template
+Update settings to deal with media upload
+--Managing media settings:
+   +
+   +
+   +
+   +
+   +
+make migrations and migrate to confirm if the models are working and database is updating
+
+Create tests for models class
+    +
+    +
+    +
+    +
+    +
+    +
 

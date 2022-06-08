@@ -19,8 +19,10 @@
             <div class="col-md-12 py-2" >
                 {{profile.profile_name}}<br>
                 {{profile.profile_bio}}
-                {% endfor %}
+                 <a href="{% url 'newProfile' %}"><button type="submit">Edit Profile</button></a>
             </div>
+            {% endfor %}
+
             
         </div><br>
         <hr style="width:87%">
