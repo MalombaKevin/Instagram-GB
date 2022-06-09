@@ -31,5 +31,11 @@ Create tests for models class
     +
     +
     +
-    +
+    
+
+Django Registration
+    + install django-Registration
+    + Project urls setup
+    + Create a template in a new directory Registration
+    
 
