@@ -9,6 +9,7 @@ urlpatterns = [
     path('post', views.insta_post,name='newPost' ),
     path('update', views.newPost,name='post' ),
     path('profile', views.profile,name='profile' ),
+    path('search', views.search_results,name='search' ),
     path('updateProfile', views.update_profile,name='newProfile' ),
 ]
 

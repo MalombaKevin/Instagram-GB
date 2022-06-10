@@ -40,4 +40,7 @@ class Images(models.Model):
     def update_caption(self, new_caption):
         self.image_caption = new_caption
         self.save()
+    
+    def search_image(self, search_term):
+        return Images.objects.filter(image_name__icontains=search_term)
 

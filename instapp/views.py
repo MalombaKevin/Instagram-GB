@@ -13,6 +13,7 @@ def index(request):
     
     current_user = request.user
     images = Images.objects.all()
+    all_users = User.objects.all()
 
     try:
         user = User.objects.get(username = current_user.username)
@@ -21,7 +22,7 @@ def index(request):
         user = None
         users = None
     
-    return render(request, 'index.html', {"images": images, "user": user, "users": users})
+    return render(request, 'index.html', {"images": images, "user": user, "users": users, "all_users": all_users})
 
 
 @login_required(login_url='/accounts/login/')
@@ -54,12 +55,26 @@ def update_profile(request):
 
     return render(request, 'forms/addprofile.html', {"form": form})
 
-@login_required(login_url='/accounts/login/')
+@login_required
 def profile(request):
-    profile = Profile.objects.all()
+    user = User.objects.get(username=request.user.username)
     images = Images.objects.all()
-    return render(request, 'profile.html', {"images": images, "profile": profile})
+    return render(request, 'profile.html', {"images": images, "user": user, "profile": profile})
+
+@login_required
+def search_results(request):
+    if 'search' in request.GET and request.GET['search']:
+        search_term = request.GET.get('search')
+        images = Images.search_image(search_term)
+        message = f'{search_term}'
+            
+        return render(request, 'search.html', { "images": images, "message": message})
+
+    else:
+        message = "You haven't searched for any term"
+    return render(request, 'search.html', {"message": message})
 
 
+ 
 
     

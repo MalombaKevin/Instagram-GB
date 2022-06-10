@@ -13,9 +13,10 @@
 <body>
     {% include 'navbar.html'%}
     <div class="container" align="center">
-        
+        <!-- {{user.username}} -->
         <div class="row" style="width:90%" align="left">
-            {% for profile in profile%}
+           <h3>{{user.username}}</h3>
+            {% for profile in  profile%}
             <div class="col-md-12 py-2" >
                 {{profile.profile_name}}<br>
                 {{profile.profile_bio}}
@@ -24,7 +25,7 @@
             {% endfor %}
 
             
-        </div><br>
+        </div><br>                         
         <hr style="width:87%">
         
 

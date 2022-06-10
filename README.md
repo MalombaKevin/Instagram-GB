@@ -1,7 +1,6 @@
-# Instagram-GB
+# Instagram-GB 
 #### Welcome to Instagram GB. Instagram-GB a web application clone of Instagram Application.
 ### By Kevin Malomba  
-
 
 -------
 

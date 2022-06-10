@@ -17,12 +17,15 @@
         <div class="collapse navbar-collapse" style="display:flex; justify-content:center">
             <ul class="nav justify-content-between">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Instagram <span class="sr-only">(current)</span></a>
+                
+                        <img src="https://i.imgur.com/zqpwkLQ.png" style="height:3rem" />
+                       
                 </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                 <li>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" name="search" action="{% url 'search' %}">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
                 </li>
                 <li class="nav-item">
