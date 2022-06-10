@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 
 
 # Create your views here.
-# @login_required(login_url='/accounts/login/')
+@login_required(login_url='/accounts/login/')
 def index(request):
     
     current_user = request.user
